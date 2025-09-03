@@ -1,0 +1,23 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/orlandomgr/practice#readme",
+  "bugs": {
+    "url": "https://github.com/orlandomgr/practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orlandomgr/practice.git"
+  },
+  "license": "ISC",
+  "author": "orlandomgr@gmail.com",
+  "type": "commonjs",
+  "main": "01_palindrome_Number.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@datastructures-js/priority-queue": "^6.3.4"
+  }
+}
