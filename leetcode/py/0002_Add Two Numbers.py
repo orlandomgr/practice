@@ -1,6 +1,6 @@
 from typing import Optional
-from utils.FugaUtils import ListNode, LeetUtils
-
+from myUtils.Utils import ListNode
+from myUtils.UtilsLeetCode import UtilsLeetCode
 
 # Definition for singly-linked list.
 # class ListNode:
@@ -30,17 +30,17 @@ class Solution:
         return root
 
 obj = Solution()
-array1 = LeetUtils().getListNodeFromArray([2,4,3])
-array2 = LeetUtils().getListNodeFromArray([5,6,4])
+array1 = UtilsLeetCode.getListNodeFromArray([2,4,3])
+array2 = UtilsLeetCode.getListNodeFromArray([5,6,4])
 result = obj.addTwoNumbers(array1, array2)
 print(result)
 
-array1 = LeetUtils().getListNodeFromArray([])
-array2 = LeetUtils().getListNodeFromArray([])
+array1 = UtilsLeetCode.getListNodeFromArray([])
+array2 = UtilsLeetCode.getListNodeFromArray([])
 result = obj.addTwoNumbers(array1, array2)
 print(result)
 
-array1 = LeetUtils().getListNodeFromArray([9,9,9,9,9,9,9])
-array2 = LeetUtils().getListNodeFromArray([9,9,9,9])
+array1 = UtilsLeetCode.getListNodeFromArray([9,9,9,9,9,9,9])
+array2 = UtilsLeetCode.getListNodeFromArray([9,9,9,9])
 result = obj.addTwoNumbers(array1, array2)
 print(result)
