@@ -1,4 +1,4 @@
-from practice.myUtils.Utils import TreeNode
+from myUtils.Utils import TreeNode
 from typing import Optional, List
 
 # Definition for a binary tree node.
