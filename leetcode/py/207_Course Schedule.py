@@ -1,45 +1,9 @@
 from typing import List
 from myUtils.Utils import printResult
-from collections import deque
 from collections import defaultdict
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = []
-
-    def setNext(self, next):
-        self.next.append(next)
-
-    def getNext(self):
-        return self.next
-
-    def __str__(self):
-        return f"ListNode: val='{self.val}', next={self.next}"
-
-    def __repr__(self):
-        return self.__str__()
 
 
 class Solution:
-
-    def isCycle(self, node: ListNode, vertex: List[List[int]], courses):
-        # visited = set()
-        queue = deque()
-        for next in node.getNext():
-            queue.append((node.val, next.val))
-        while queue:
-            r, c = queue.pop()
-            print("visiting: r: %s c: %s" % (r, c))
-            # print(node)
-            if vertex[r][c] == 2:
-                return True
-            elif vertex[r][c] == 1:
-                vertex[r][c] = 2
-            for next in courses[c].getNext():
-                queue.append((c, next.val))
-            # queue.extend(node.getNext())
-        return False
 
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         courses = defaultdict(set)
@@ -47,6 +11,7 @@ class Solution:
             courses[a].add(b)
 
         visited = set()
+
         def dfs(curr):
             if curr in visited:
                 return False
@@ -65,6 +30,7 @@ class Solution:
             if not dfs(curr):
                 return False
         return True
+
 
 obj = Solution()
 

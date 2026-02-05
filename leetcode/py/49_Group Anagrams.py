@@ -8,9 +8,9 @@ class Solution:
 
         for word in strs:
             key = "".join(sorted(word))
-            print(key)
+            # print(key)
             groups[key].append(word)
-
+        # print(groups)
         return list(groups.values())
     
 obj = Solution()

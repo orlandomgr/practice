@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; width: 350px; }
+    input { width: 100%; margin-bottom: 12px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+    button { width: 100%; padding: 10px; background: #0052cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h3>Jira Settings</h3>
+  <input type="text" id="domain" placeholder="example.atlassian.net">
+  <input type="email" id="email" placeholder="Atlassian Email">
+  <input type="password" id="token" placeholder="API Token">
+  <button id="save">Save Credentials</button>
+  <script src="options.js"></script>
+</body>
+</html>

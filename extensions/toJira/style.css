@@ -1,0 +1,27 @@
+#jira-extension-modal {
+  position: fixed; top: 80px; left: 50%; transform: translateX(-50%);
+  background: #fff; border-radius: 8px; padding: 24px; width: 450px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3); z-index: 999999; font-family: sans-serif;
+}
+.jira-modal-content h4 { margin: 0 0 15px; color: #172b4d; }
+.jira-modal-content label { display: block; margin: 12px 0 4px; font-weight: 600; font-size: 12px; color: #5e6c84; }
+.jira-modal-content input, .jira-modal-content textarea, .jira-modal-content select {
+  width: 100%; padding: 8px; border: 2px solid #dfe1e6; border-radius: 4px; box-sizing: border-box;
+}
+.jira-actions { margin-top: 24px; text-align: right; }
+#jira-submit { background: #0052cc; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: all 0.2s; }
+#jira-cancel { background: transparent; border: none; color: #42526e; cursor: pointer; margin-right: 12px; }
+
+/* Animations */
+.spinner {
+  display: inline-block; width: 12px; height: 12px; border: 2px solid rgba(255,255,255,.3);
+  border-radius: 50%; border-top-color: #fff; animation: spin 0.8s linear infinite;
+  margin-right: 8px; vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.checkmark {
+  display: inline-block; width: 12px; height: 6px; border-left: 2px solid white;
+  border-bottom: 2px solid white; transform: rotate(-45deg); margin-right: 8px;
+  vertical-align: middle; margin-bottom: 4px;
+}

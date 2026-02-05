@@ -1,0 +1,5 @@
+obj = SnapshotArray(3)
+obj.set(0,5)
+printResult(obj.snap(), 0)
+obj.set(0,6)
+printResult(obj.get(0, 0), 5)

@@ -2,6 +2,7 @@ from typing import List
 from collections import defaultdict
 
 def printResult(result, expected):
+        # assert result == expected
         if result == expected:
             print("\033[92mStatus: %s result: %s expected: %s\033[0m" % (result == expected, result, expected))
         else:
