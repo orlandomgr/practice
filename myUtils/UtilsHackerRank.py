@@ -1,5 +1,5 @@
 from typing import List, Optional
-from Utils import Node, ListNode
+from myUtils.Utils import Node, ListNode
 
 
 def getNodeFromArray(self, array: List[int]) -> Optional[Node]:

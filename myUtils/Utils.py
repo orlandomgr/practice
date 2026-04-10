@@ -47,3 +47,21 @@ class TreeNode:
 
     def __str__(self):
         return f"TreeNode: val='{self.val}', left={self.left}, right={self.right}"
+
+class SinglyLinkedListNode:
+    def __init__(self, data=0, next=None):
+        self.data = data
+        self.next = next
+
+    def setNext(self, next):
+        self.next = next
+
+    def __str__(self):
+        next = ""
+        if self.next:
+            next = f", {self.next}"
+        return f"{self.data}{next}" 
+        # return f"ListNode: data='{self.data}', next={self.next}"
+    
+    def __repr__(self):
+        return self.__str__()
